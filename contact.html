@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Firm.lmt</title>
+
+        <!-- OWN CSS FILES-->
+        <link rel="stylesheet" href="styles.css"  type="text/css" />
+        <!-- END OWN CSS FILES-->
+        <script src="contact.js" defer></script>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        
+    </head>
+    <body>
+        <a href="./index.html">
+            <img src="./images/Logo_Title_Transparent.png" alt="logo" class="logo_contact">
+        </a>
+        <p class="before_text">Please complete the following details so we can get in contact with you as soon as possible.</p>   
+        
+        <form name="contact" id="contact_form">
+            <div style="overflow:auto;">
+            <table class="form_table">
+                <tr>
+                    <td><label for="fname">First name:</label></td>
+                    <td><label for="lname">Last name:</label><br></td>
+                </tr>
+                <tr>
+                    <td><input type="text" id="fname" name="fname" required></td>
+                    <td><input type="text" id="lname" name="lname" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><label for="phone">Phone number:</label></td>
+                </tr>
+                <tr>
+                    <td><input type="email" id="email" name="email" required></td>
+                    <td><input type="tel" id="phone" name="phone" required></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><label for="message">Type your message here (500 characters max):</label><br></td>
+                </tr>
+                <tr>
+                    <td colspan="2"><textarea cols="3" rows="10" id="message" name="message" required></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <button type="submit" value="Submit">Submit</td>
+                </tr>
+            </table>
+            </div>
+        </form>
+    
+    </body>
+    </html>

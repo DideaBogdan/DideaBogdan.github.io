@@ -1,0 +1,231 @@
+body{
+    background-color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: medium;
+}
+
+#menu_container{
+    display: inline-block;
+    width: 350px;
+    position: absolute;
+    margin: 15px 15px;
+    z-index: 100;
+}
+
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    position: relative;
+    background-color: #46b9ff;;
+    margin: 6px 0;
+    transition: 0.4s;
+
+    z-index:2;
+}
+
+.change .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+  }
+
+.change .bar2 {
+    opacity: 0;
+}
+  
+.change .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+.change {
+    border-style: solid;
+    border-color:#46b9ff;;
+    box-shadow: 10px 10px 10px #888888;
+    background-image: linear-gradient( #073a78, #ff0001);
+    
+}
+
+#menu_list, #menu_list ul{
+    display: none;
+    max-width: fit-content;
+    list-style-type: none;
+    z-index: 1;
+    padding: 10px;
+    margin-left: 15px;
+    color: #46b9ff
+ 
+}
+
+ #menu_list li{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    margin: 15px;
+ }
+ 
+ #menu_list li span, #menu_list li a{
+    text-decoration: none;
+    color: #46b9ff;
+        font-weight: bold;
+    font-size: large;
+    cursor: pointer;
+    margin: 15px;
+}
+
+#menu_list li span:hover, #menu_list li a:hover{
+    text-decoration: none;
+    color: black ;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+#menu_button{
+    cursor: pointer;
+}
+  
+.logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    width: 70%;
+}
+
+.slogan{
+    display: block;
+    text-align: center;
+    z-index: 2;
+}
+
+.home_text{
+    display: block;
+    text-align: center;
+}
+
+#projects_category{
+    list-style: none;
+    display: none;
+    width: fit-content;
+    white-space: nowrap;
+}
+#projects_category > li{
+    margin: 10px;
+}
+
+#area_expertise {
+    display: none;
+}
+
+#area_expertise li{
+    list-style: none;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+#unamed {
+    display: none;
+}
+
+
+#unamed li{
+    list-style: none;
+    display: block;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.contact_link{
+    text-decoration: none;
+    color: #46b9ff;
+    font-weight: bold;
+    font-size: larger;
+    cursor: pointer;
+    margin-right: 40px;
+    position: fixed;
+    bottom: 50px;
+    right: 20px;
+
+}
+
+.contact_link:hover{
+    color:#46b9ff;
+    text-decoration: underline;
+    font-size: x-large;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+ /*CONTACT PAGE CSS START */ 
+
+.before_text{
+    text-align: center;
+    display: block;
+    padding: 5%;
+} 
+
+#contact_form{
+  width: 70%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+#contact_form input, #contact_form textarea, #contact_form button{
+    background-color: black;
+    color: white;
+    line-height: 200%;
+    resize: none;
+    min-width: 100%;
+    width: 15vw;
+}
+
+.form_table td{
+    padding: 10px;
+    padding-right: 15vw;
+}
+
+.logo_contact{
+    display: block;
+    max-width: 400px;
+}
+
+
+ /*CONTACT PAGE CSS END */
+ @media only screen and (max-width: 600px) {
+    .before_text{
+        text-align: center;
+    } 
+    
+    #contact_form{
+      margin: 0 10% 0 0;
+      margin-right: 0;
+      width: fit-content;
+    }
+    
+    #contact_form input, #contact_form textarea{
+        background-color: black;
+        color: white;
+        line-height: 200%;
+        resize: none;
+        width: 15vw;
+    }
+    #menu_container{
+        display: inline-block;
+        width: 350px;
+        position: fixed;
+        margin: 10px 10px;
+        z-index: 100;
+    }
+    .logo_contact{
+        display: block;
+        max-width: 200px;
+    }
+    .contact_link{
+        bottom: 30px;
+        right: px;
+    
+    }
+    
+    
+}
+
+ /*MEDIA DEVICE CSS*/
